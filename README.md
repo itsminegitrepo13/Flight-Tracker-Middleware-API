@@ -37,7 +37,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-The API will be accessible at: `http://localhost:8000/flight`
+The API will be accessible at: `http://127.0.0.1:8000/flight`
 
 ---
 
@@ -91,6 +91,33 @@ Query Parameters:
   "arrival_time": "01:00 PM"
 }
 ```
+
+
+## 💡 Sample Request
+You can test the API by making a GET request with the required parameters. Here’s how you can make a sample request:
+
+Request URL:
+http://127.0.0.1:8000/flight?airline_code=AA&flight_number=100&departure_date=2025-04-01T00:00:00
+Request Method: GET
+Query Parameters:
+airline_code: AA (Example: American Airlines)
+
+flight_number: 100 (Example: Flight number)
+
+departure_date: 2025-04-01T00:00:00 (Example: Date and time of flight departure in ISO format)
+
+Sample Response:
+
+{
+  "airline_code": "AA",
+  "flight_number": "100",
+  "departure_date": "2025-04-01T00:00:00",
+  "status": "On Time",
+  "departure_airport": "JFK",
+  "arrival_airport": "LAX",
+  "departure_time": "10:00 AM",
+  "arrival_time": "01:00 PM"
+}
 
 ---
 
