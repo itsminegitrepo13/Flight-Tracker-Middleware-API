@@ -92,12 +92,16 @@ Query Parameters:
 }
 ```
 
+---
 
 ## 💡 Sample Request
-You can test the API by making a GET request with the required parameters. Here’s how you can make a sample request:
 
-Request URL:
+You can test the API by making a `GET` request with the required parameters. Here’s how you can make a sample request:
+
+### **Request URL**:
+```http
 http://127.0.0.1:8000/flight?airline_code=AA&flight_number=100&departure_date=2025-04-01T00:00:00
+
 Request Method: GET
 Query Parameters:
 airline_code: AA (Example: American Airlines)
@@ -118,6 +122,9 @@ Sample Response:
   "departure_time": "10:00 AM",
   "arrival_time": "01:00 PM"
 }
+
+```
+
 
 ---
 
